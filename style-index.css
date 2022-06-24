@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700;800&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    margin: 0%;
+}
+body{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    font-family: 'Noto Sans', sans-serif;
+}
+#tela-left{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#tela-left > h1{
+    font-size: 3vw;
+    margin: 30px;
+    color: #77ffc0;
+}
+#tela-left img{
+    width: 35vw;
+}
+
+#tela-right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#card-input{
+    margin: 10px;
+    background-color: #2f2841;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+#card-input h1{
+    font-size: 20pt;
+    font-weight: 800;
+    color: #00ff88;
+    margin: 10px 0px;
+}
+
+#container-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px;
+    color: #f0ffffde;
+}
+#bnt_login{
+    width: 100%;
+    padding: 16px 0px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2d234b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+
+}
+#container-input > input{
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 10px 0px;
+    font-size: 12pt;
+    background-color: #514869;
+    color: #f0ffffde;
+    box-shadow: 0px 10px 40px #00000056;
+}
+#container-input > input::placeholder{
+    color: #f0ffff94;
+}
+
+#usuario_txt{
+    margin: 0px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 950px){
+    #card-input{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    body{
+        flex-direction: column;
+    }
+    #tela-left, #tela-right{
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    #tela-left h1{
+        display: none;
+    }
+
+    #tela-left img{
+        width: 50vw;
+    }
+    
+}
