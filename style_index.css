@@ -10,7 +10,7 @@ body{
     background-color: #201b2c;
     font-family: 'Noto Sans', sans-serif;
 }
-#tela-left{
+#tela_left{
     width: 50%;
     height: 100vh;
     display: flex;
@@ -20,16 +20,16 @@ body{
 
 }
 
-#tela-left > h1{
+#tela_left > h1{
     font-size: 3vw;
     margin: 30px;
     color: #77ffc0;
 }
-#tela-left img{
+#tela_left img{
     width: 35vw;
 }
 
-#tela-right{
+#tela_right{
     width: 50%;
     height: 100vh;
     display: flex;
@@ -37,7 +37,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-#card-input{
+#card_input{
     margin: 10px;
     background-color: #2f2841;
     display: flex;
@@ -48,21 +48,21 @@ body{
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
-#card-input h1{
+#card_input h1{
     font-size: 20pt;
     font-weight: 800;
     color: #00ff88;
     margin: 10px 0px;
 }
 
-#container-input{
+#container_input{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 20px 0px;
     color: #f0ffffde;
 }
-#container-input svg{
+#container_input svg{
     color: #f03f32;
     width: 16px;
     height: 16px;
@@ -89,7 +89,7 @@ body{
     box-shadow: 0px 10px 40px -12px #00ff8052;
 
 }
-#container-input > input{
+#container_input > input{
     padding: 15px;
     border-radius: 10px;
     outline: none;
@@ -100,7 +100,7 @@ body{
     color: #f0ffffde;
     box-shadow: 0px 10px 40px #00000056;
 }
-#container-input > input::placeholder{
+#container_input > input::placeholder{
     color: #f0ffff94;
 }
 
@@ -108,8 +108,20 @@ body{
     margin: 0px 0px 20px 0px;
 }
 
+#card_avatar{
+    margin: 10px;
+    background-color: #2f2841;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
 @media only screen and (max-width: 950px){
-    #card-input{
+    #card_input{
         width: 85%;
     }
 }
@@ -117,17 +129,17 @@ body{
     body{
         flex-direction: column;
     }
-    #tela-left, #tela-right{
+    #tela_left, #tela_right{
         width: 90%;
         height: fit-content;
         margin-bottom: 20px;
     }
 
-    #tela-left h1{
+    #tela_left h1{
         display: none;
     }
 
-    #tela-left img{
+    #tela_left img{
         width: 50vw;
     }
     
