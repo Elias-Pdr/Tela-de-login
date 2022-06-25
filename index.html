@@ -16,14 +16,43 @@
         <div id="card-input">
             <h1>LOGIN</h1>
             <div id="container-input">
-                <label for="usuario">Usuário</label>
-                <input type="text" name="usuario_txt" id="usuario_txt" placeholder="Usuário">
+                <label for="usuario">Nome de usuário</label>
+                <input type="text" name="usuario_txt" id="usuario_txt" placeholder="Crie um nome de usuário">
                 <br>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha_txt" id="senha_txt" placeholder="Senha">
+                <label for="senha">Crie uma senha</label>
+                <input type="password" name="senha_txt" id="senha_txt" placeholder="Digite a senha">
+                <br>
+                <label for="confirm_senha">Confirme a senha</label>
+                <input type="password" name="confirm_senha_txt" id="confirm_senha_txt" placeholder="Digite a senha novamente">
+                <div id="senha_error" style="display: flex; align-items: center;">
+                    <svg fill="currentColor"  viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+                    <label for="senha_diferente" id="senha_diferente">As senhas não são iguais. Tente novamente.</label>
+                </div>
             </div>
-            <input id="bnt_login" type="button" value="Login">
+            <input id="bnt_login" type="button" value="entrar" onclick="submit()">
         </div>
     </div>
+
+    <script>
+        const senha = document.getElementById('senha_txt')
+        const confirm_senha = document.getElementById('confirm_senha_txt')
+        const senha_error = document.getElementById('senha_error')
+        const senha_error_txt = document.getElementById('senha_diferente')
+        senha_error.style.display = 'none'
+
+        function submit() {
+            if(senha.value == confirm_senha.value){
+                senha_error.style.display = 'none'
+                if(senha.value == '123' & confirm_senha.value == '123'){
+                    senha_error.style.display = 'flex'
+                    senha_error_txt.innerHTML = 'Sério mesmo que sua senha vai ser 123?'
+                }else{
+                    senha_error_txt.innerHTML = 'As senhas não são iguais. Tente novamente.'
+                }
+            }else{
+                senha_error.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>

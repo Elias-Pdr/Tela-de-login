@@ -62,6 +62,17 @@ body{
     margin: 20px 0px;
     color: #f0ffffde;
 }
+#container-input svg{
+    color: #f03f32;
+    width: 16px;
+    height: 16px;
+    
+}
+#senha_diferente{
+    color: #f03f32;
+    margin-left: 4px;
+}
+
 #bnt_login{
     width: 100%;
     padding: 16px 0px;
